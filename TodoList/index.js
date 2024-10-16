@@ -12,6 +12,7 @@ document.querySelector("#push").onclick = function() {
             </div>`
     }
 
+    // Deleting a tasks
     var current_tasks = document.querySelectorAll(".delete");
     for(var i = 0; i < current_tasks.length; i++){
         current_tasks[i].onclick = function() {
@@ -19,6 +20,7 @@ document.querySelector("#push").onclick = function() {
         }
     }
 
+    // Crossing out a completed task
     var tasks = document.querySelectorAll(".task");
     for (var i = 0; i < tasks.length; i++){
         tasks[i].onclick = function() {
